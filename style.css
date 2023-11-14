@@ -149,6 +149,7 @@ body{
 
 .card-header{
     height: 48px;
+    padding-bottom: 24px;
 }
 
 .stilat{
@@ -168,6 +169,7 @@ form{
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
+
 input{
     width: 200px;
     height: 24px;
