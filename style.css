@@ -208,8 +208,16 @@ input{
 
 .toggle-read-btn{
     font-family: 'Minecraft', sans-serif;
+    border: none;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+    height: 24px;
 }
 
+.toggle-read-btn:hover{
+    scale: 1.1;
+}
 .remove-btn{
     font-family: 'Minecraft', sans-serif;
+    margin-top: var(--spacing-md);
 }
