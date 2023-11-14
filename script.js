@@ -67,6 +67,7 @@ const newBookForm = document.querySelector('#new-book-form');
 addButton.addEventListener('click', () => {
     newBookForm.style.display = "flex";
     newBookForm.classList.add('stilat');
+    newBookForm.reset();
 });
 
 newBookForm.addEventListener("submit", function (event) {
