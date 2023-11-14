@@ -1,0 +1,186 @@
+:root {
+    --white: #ecfdf5;
+    --grey: #f0eef1;
+    --black: #050505;
+    --light-green: #9fff9c;
+    --dark-green: #022c22;
+    --border-radius: 8px;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 40px;
+    --container-width: 1200px;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+body{
+    background-color: #2c3e50;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-bottom: 100px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.header-content{
+    max-width: var(--container-width);
+    padding: var(--spacing-lg);
+    padding-left: 48px;
+    padding-right: 48px;
+    margin: 0 auto;
+    color: var(--dark-green);
+    background-color: rgba(28,36,32, 0.7);
+    border-radius: var(--border-radius);
+    font-family: 'Minecraft', sans-serif;
+}
+
+.header-content h1{
+    color: white;
+    text-shadow: 
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+#Login{
+    border: none;
+    background-color:rgba(137,57,23, 1);
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: var(--spacing-sm);
+    box-shadow: var(--shadow);
+    color: #022c22;
+    font-family: 'Minecraft', sans-serif;
+    text-shadow: -1px -1px 0 #c5c5c5,
+    1px -1px 0 #c5c5c5,
+    -1px 1px 0 #c5c5c5,
+    1px 1px 0 #c5c5c5;
+}
+
+.add-container .add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-top: var(--spacing-lg);
+    border-radius: var(--border-radius);
+}
+
+.add-button{
+    background-color: rgba(137,57,23, 0.8);
+    max-width: 165px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    transition: 0.4s;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ffe15fb3; }
+    50% { box-shadow: 0 0 20px #ffe15fb3; }
+    100% { box-shadow: 0 0 5px #ffe15fb3; }
+}
+
+.add-button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    background-color: rgba(137,57,23, 1);
+    animation: glowing 2s infinite;
+}
+
+#add-btn{
+    border: none;
+    background-color: rgba(137,57,23, 0);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #022c22;
+    font-family: 'Minecraft', sans-serif;
+    text-shadow: -1px -1px 0 #ffffff,
+                1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff,
+                1px 1px 0 #ffffff;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 128px;
+    padding: 12px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    line-height: 1.2;
+    text-align: center;
+    width: 150px;
+    background-color: rgba(255, 226, 94, 0.7);
+    font-family: 'Minecraft', sans-serif;
+}
+
+.card-header{
+    height: 48px;
+}
+
+.stilat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    background-color: rgba(63,75,72, 0.8);
+    padding: var(--spacing-sm);
+}
+form{
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+input{
+    width: 200px;
+    height: 24px;
+}
+
+#new-book-form{
+    margin-top: var(--spacing-xl);
+}
+
+.toggle-read-btn{
+    font-family: 'Minecraft', sans-serif;
+}
+
+.remove-btn{
+    font-family: 'Minecraft', sans-serif;
+}
