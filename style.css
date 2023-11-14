@@ -161,6 +161,7 @@ body{
     background-color: rgba(63,75,72, 0.8);
     padding: var(--spacing-sm);
 }
+
 form{
     width: 300px;
     height: 350px;
@@ -168,11 +169,14 @@ form{
     text-align: center;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    font-family: 'Minecraft', sans-serif;
 }
 
 input{
     width: 200px;
     height: 24px;
+    border-radius: var(--border-radius);
+    font-family: 'Minecraft', sans-serif;
 }
 
 #new-book-form{
