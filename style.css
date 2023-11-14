@@ -172,6 +172,25 @@ form{
     font-family: 'Minecraft', sans-serif;
 }
 
+.new-book-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#title{
+    margin-left: 24px;
+}
+
+#pages{
+    margin-left: 10px;
+}
+.read-form{
+    display: flex;
+    align-items: center;
+}
+
 input{
     width: 200px;
     height: 24px;
@@ -179,6 +198,10 @@ input{
     font-family: 'Minecraft', sans-serif;
 }
 
+#read{
+    width: 40px;
+    height: 24px;
+}
 #new-book-form{
     margin-top: var(--spacing-xl);
 }
