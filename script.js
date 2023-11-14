@@ -52,6 +52,8 @@ function render() {
                     <button class ="remove-btn" onclick="removeBook(${i})">Remove</button> 
                 </div>`;
         content.appendChild(bookCard);
+        let colorToggleBtn = bookCard.querySelector('.toggle-read-btn');
+        colorToggleBtn.style.backgroundColor = book.isRead ? 'rgba(31, 202, 31, 0.4)' : 'rgba(221, 49, 19, 0.8)';
     }
 }
 
